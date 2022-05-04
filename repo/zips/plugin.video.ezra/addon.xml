@@ -1,10 +1,11 @@
-<addon id="plugin.video.ezra" name="Ezra" provider-name="" version="0.0.3">
+<addon id="plugin.video.ezra" name="Ezra" provider-name="" version="0.0.4">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.19.1" />
         <import addon="script.ezart" version="0.0.1" />
         <import addon="script.module.myaccounts" version="0.0.1" />
         <import addon="script.module.ezscrapers" version="0.0.1" />
+        <import addon="repository.ezra" version="0.0.1" />
     </requires>
     <extension library="resources/lib/fen.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
