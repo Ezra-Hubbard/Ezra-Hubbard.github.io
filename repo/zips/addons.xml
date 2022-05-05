@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="plugin.video.ezra" name="Ezra" provider-name="" version="0.0.5">
+<addons><addon id="plugin.video.ezra" name="Ezra" provider-name="Ezra Hubbard" version="0.0.6">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.19.1" />
@@ -8,7 +8,7 @@
         <import addon="script.module.ezscrapers" version="0.0.1" />
         <import addon="repository.ezra" version="0.0.1" />
     </requires>
-    <extension library="resources/lib/fen.py" point="xbmc.python.pluginsource">
+    <extension library="resources/lib/ezra.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
     </extension>
     <extension library="resources/lib/service.py" point="xbmc.service" />
@@ -17,47 +17,47 @@
         <menu id="kodi.core.main">
             <item library="resources/contextmenu/refresh_widgets.py">
                 <label>40001</label>
-                <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                <visible>String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
             </item>
             <item library="resources/contextmenu/mark_watched.py">
                 <label>40003</label>
-                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),0)</visible>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(ezra_widget),true) + String.IsEqual(ListItem.Property(ezra_playcount),0)</visible>
             </item>
             <item library="resources/contextmenu/mark_unwatched.py">
                 <label>40004</label>
-                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),1)</visible>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(ezra_widget),true) + String.IsEqual(ListItem.Property(ezra_playcount),1)</visible>
             </item>
             <item library="resources/contextmenu/clear_progress.py">
                 <label>40009</label>
-                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_in_progress),true)</visible>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(ezra_widget),true) + String.IsEqual(ListItem.Property(ezra_in_progress),true)</visible>
             </item>
             <item library="resources/contextmenu/browse.py">
                 <label>40002</label>
-                <visible>String.IsEqual(ListItem.dbtype,episode) + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                <visible>String.IsEqual(ListItem.dbtype,episode) + String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
             </item>
             <item library="resources/contextmenu/browse_season.py">
                 <label>40011</label>
-                <visible>String.IsEqual(ListItem.dbtype,episode) + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                <visible>String.IsEqual(ListItem.dbtype,episode) + String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
             </item>
             <item library="resources/contextmenu/trakt_manager.py">
                 <label>40005</label>
-                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
             </item>
             <item library="resources/contextmenu/favorites_manager.py">
                 <label>40008</label>
-                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
             </item>
             <item library="resources/contextmenu/play_random.py">
                 <label>40010</label>
-                <visible>[String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                <visible>[String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
             </item>
             <item library="resources/contextmenu/options.py">
                 <label>40007</label>
-                <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                <visible>String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
             </item>
             <item library="resources/contextmenu/extras.py">
                 <label>40006</label>
-                <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                <visible>String.IsEqual(ListItem.Property(ezra_widget),true)</visible>
             </item>
         </menu>
     </extension>
@@ -104,7 +104,7 @@
             <fanart>fanart.png</fanart>
         </assets>
     </extension>
-</addon><addon id="script.module.ezscrapers" name="Ezra Scrapers Module" version="0.0.4" provider-name="">
+</addon><addon id="script.module.ezscrapers" name="Ezra Scrapers Module" version="0.0.5" provider-name="Ezra Hubbard">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -133,7 +133,7 @@
 		<news>
 		</news>
 	</extension>
-</addon><addon id="script.module.myaccounts" version="2.0.2" name="Ezra Accounts" provider-name="">
+</addon><addon id="script.module.myaccounts" version="2.0.3" name="Ezra Accounts" provider-name="Ezra Hubbard">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
