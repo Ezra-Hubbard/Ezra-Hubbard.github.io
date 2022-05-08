@@ -104,7 +104,7 @@
             <fanart>fanart.png</fanart>
         </assets>
     </extension>
-</addon><addon id="script.module.ezscrapers" name="Ezra Scrapers Module" version="0.0.5" provider-name="Ezra Hubbard">
+</addon><addon id="script.module.ezscrapers" name="Ezra Scrapers Module" version="0.0.7" provider-name="Ezra Hubbard">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
