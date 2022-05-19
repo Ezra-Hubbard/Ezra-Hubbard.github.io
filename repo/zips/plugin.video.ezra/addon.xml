@@ -1,8 +1,7 @@
-<addon id="plugin.video.ezra" name="Ezra" provider-name="Ezra Hubbard" version="0.0.8">
+<addon id="plugin.video.ezra" name="Ezra" provider-name="Ezra Hubbard" version="0.0.9">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.19.1" />
-        <import addon="script.ezart" version="0.0.1" />
         <import addon="script.module.myaccounts" version="2.0.3" />
         <import addon="script.module.ezscrapers" version="0.0.7" />
         <import addon="repository.ezra" version="0.0.1" />
