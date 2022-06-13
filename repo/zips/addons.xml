@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="plugin.video.ezra" name="Ezra" provider-name="Ezra Hubbard" version="0.1.3">
+<addons><addon id="plugin.video.ezra" name="Ezra" provider-name="Ezra Hubbard" version="0.1.4">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.19.1" />
@@ -132,7 +132,7 @@
 		<news>
 		</news>
 	</extension>
-</addon><addon id="script.module.myaccounts" version="2.0.4" name="Ezra Accounts" provider-name="Ezra Hubbard">
+</addon><addon id="script.module.myaccounts" version="2.0.5" name="My Accounts" provider-name="Ezra Hubbard">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
