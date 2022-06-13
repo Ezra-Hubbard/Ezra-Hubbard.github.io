@@ -132,7 +132,7 @@
 		<news>
 		</news>
 	</extension>
-</addon><addon id="script.module.myaccounts" version="2.0.5" name="My Accounts" provider-name="Ezra Hubbard">
+</addon><addon id="script.module.myaccounts" version="2.0.5b" name="My Accounts" provider-name="Ezra Hubbard">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
