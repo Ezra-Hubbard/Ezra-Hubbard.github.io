@@ -1,2 +1,0 @@
-# Ezra-Hubbard.github.io
-

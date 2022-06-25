@@ -240,7 +240,7 @@
 		<news>
 		</news>
 	</extension>
-</addon><addon id="repository.ezra" name="Ezra Repository" version="0.0.1" provider-name="Ezra-Hubbard">
+</addon><addon id="repository.ezra" name="Ezra Repository" version="0.0.2" provider-name="Ezra-Hubbard">
     <extension point="xbmc.addon.repository" name="Ezra Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/Ezra-Hubbard/Ezra-Hubbard.github.io/master/repo/zips/addons.xml</info>
@@ -256,18 +256,6 @@
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon><addon id="script.ezart" name="Ezra Art Module" provider-name="" version="0.0.1">
-    <extension point="xbmc.python.module" />
-    <extension point="xbmc.addon.metadata">
-        <summary>Themes for Addons</summary>
-        <description>Themes for Addons</description>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.png</fanart>
         </assets>
     </extension>
 </addon><addon id="script.module.ezscrapers" name="Ezra Scrapers Module" version="0.1.1" provider-name="Ezra Hubbard">

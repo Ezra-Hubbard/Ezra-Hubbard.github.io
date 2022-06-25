@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.ezra" name="Ezra Repository" version="0.0.1" provider-name="Ezra-Hubbard">
+<addon id="repository.ezra" name="Ezra Repository" version="0.0.2" provider-name="Ezra-Hubbard">
     <extension point="xbmc.addon.repository" name="Ezra Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/Ezra-Hubbard/Ezra-Hubbard.github.io/master/repo/zips/addons.xml</info>
