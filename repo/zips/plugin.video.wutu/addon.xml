@@ -1,4 +1,4 @@
-<addon id="plugin.video.wutu" name="[COLOR lime]Wutu[/COLOR] (Alpha)" provider-name="wutu" version="0.0.4">
+<addon id="plugin.video.wutu" name="[COLOR lime]Wutu[/COLOR] (Alpha)" provider-name="wutu" version="0.0.5">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="context.wutu" version="0.0.3" />
