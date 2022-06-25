@@ -1,13 +1,12 @@
-<addon id="plugin.video.wutu" name="[COLOR lime]Wutu[/COLOR] (Alpha)" provider-name="wutu" version="Alpha-0.0.3">
+<addon id="plugin.video.wutu" name="[COLOR lime]Wutu[/COLOR] (Alpha)" provider-name="wutu" version="Alpha-0.0.4">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="context.wutu" />
-		<import addon="script.module.myaccounts" version="2.0.5d" />
-		<import addon="script.module.ezscrapers"/>
-		<import addon="script.module.requests" />
+		<import addon="context.wutu" version="0.0.3" />
+		<import addon="script.module.myaccounts" version="2.0.6" />
+		<import addon="script.module.ezscrapers" version="0.1.1"/>
+		<import addon="script.module.requests" version="2.19.1" />
 		<import addon="script.module.beautifulsoup4" />
 		<import addon="script.module.metahandler" optional="true" />
-		<import addon="plugin.video.youtube" optional="true" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="wutu.py">
 		<provides>video</provides>
