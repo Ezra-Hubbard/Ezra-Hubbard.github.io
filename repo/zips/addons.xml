@@ -211,7 +211,7 @@
         </assets>
         <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
     </extension>
-</addon><addon id="plugin.video.wutu" name="[COLOR lime]Wutu[/COLOR] (Alpha)" provider-name="wutu" version="Alpha-0.0.4">
+</addon><addon id="plugin.video.wutu" name="[COLOR lime]Wutu[/COLOR] (Alpha)" provider-name="wutu" version="0.0.4">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="context.wutu" version="0.0.3" />
