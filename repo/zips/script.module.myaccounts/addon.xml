@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.myaccounts" version="2.0.6" name="My Accounts" provider-name="Ezra Hubbard">
+<addon id="script.module.myaccounts" version="2.0.7" name="My Accounts" provider-name="Ezra Hubbard">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -11,7 +11,7 @@
 	<extension point="xbmc.python.module" library="lib" /> <!-- Must be placed after xbmc.python.pluginsource, otherwise the addon does not show in the repository. -->
 	<extension point="xbmc.addon.metadata">
 		<reuselanguageinvoker>false</reuselanguageinvoker>
-		<summary lang="en">Ezra Accounts Module</summary>
+		<summary lang="en">Shared Accounts Module</summary>
 		<description>Single placeholder for all your accounts.</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
