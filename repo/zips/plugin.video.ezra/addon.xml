@@ -1,4 +1,4 @@
-<addon id="plugin.video.ezra" name="Ezra" provider-name="Ezra Hubbard" version="0.1.7b">
+<addon id="plugin.video.ezra" name="Ezra" provider-name="Ezra Hubbard" version="0.1.8">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.19.1" />
