@@ -137,7 +137,7 @@
 [COLOR lime]--[/COLOR][I][/I]
 		</news>
 	</extension>
-</addon><addon id="plugin.video.ezra" name="Ezra" provider-name="Ezra Hubbard" version="0.2.5b">
+</addon><addon id="plugin.video.ezra" name="Ezra" provider-name="Ezra Hubbard" version="0.2.5d">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.19.1" />
@@ -258,7 +258,7 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon><addon id="script.module.ezscrapers" name="Ezra Scrapers Module" version="0.1.2b" provider-name="Ezra Hubbard">
+</addon><addon id="script.module.ezscrapers" name="Ezra Scrapers Module" version="0.1.3" provider-name="Ezra Hubbard">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -287,7 +287,7 @@
 		<news>
 		</news>
 	</extension>
-</addon><addon id="script.module.myaccounts" version="2.0.9b" name="My Accounts" provider-name="Ezra Hubbard">
+</addon><addon id="script.module.myaccounts" version="2.1.0" name="My Accounts" provider-name="Ezra Hubbard">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
